@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shark Surface — Premium Car Detailing Frasnacht / Bodensee</title>
+  <meta name="description" content="Premium Car Detailing in Frasnacht am Bodensee. Lackpolitur, Keramikversiegelung, Innenraum-Aufbereitung — mit dem Auge eines Perfektionisten fürs Detail.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="preload" as="image" href="assets/img/hero.webp">
+  <link rel="stylesheet" href="css/main.css">
+  <noscript>
+    <style>.reveal { opacity: 1 !important; }</style>
+  </noscript>
+</head>
+<body>
+
+  <nav class="nav" id="nav" aria-label="Hauptnavigation">
+    <a class="nav-logo" href="#hero" aria-label="Shark Surface — zum Seitenanfang">
+      <img class="nav-logo-img" src="assets/img/logo.webp" alt="Shark Surface — Car Detailing">
+    </a>
+    <div class="nav-links">
+      <a href="#fahrt">Die Fahrt</a>
+      <a href="#pakete">Pakete</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#arbeiten">Arbeiten</a>
+      <a href="#ueber">Über mich</a>
+    </div>
+    <a class="btn" href="#kontakt">Termin sichern</a>
+  </nav>
+
+  <main id="app">
+
+    <!-- ============ HERO ============ -->
+    <header class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="assets/img/hero.webp" alt="Frisch aufbereiteter Sportwagen im dunklen Studio" fetchpriority="high">
+      </div>
+      <p class="kicker reveal" data-hero>Premium Car Detailing · Frasnacht am Bodensee</p>
+      <h1 class="display h-xl hero-title" aria-label="Surface. Perfected.">
+        <span class="line"><span class="word">Surface.</span></span>
+        <span class="line"><span class="word accent">Perfected.</span></span>
+      </h1>
+      <p class="lead hero-sub reveal" data-hero>Präzise. Kompromisslos. Mit dem Auge eines Perfektionisten fürs Detail.</p>
+      <div class="hero-ctas reveal" data-hero>
+        <a class="btn" href="#kontakt">Termin sichern</a>
+        <a class="btn-ghost" href="#fahrt">Die Fahrt starten</a>
+      </div>
+      <span class="scroll-hint" aria-hidden="true">Scroll</span>
+    </header>
+
+    <!-- ============ DIE FAHRT ============ -->
+    <section class="journey" id="fahrt" aria-label="Die Fahrt durch das Auto">
+      <div class="journey-stage">
+        <canvas id="journey-canvas" aria-hidden="true"></canvas>
+        <div class="journey-intro">
+          <p class="kicker">Die Fahrt</p>
+          <h2 class="display h-lg">Steig ein.<br><span style="color:var(--accent)">Scroll weiter.</span></h2>
+        </div>
+        <div class="journey-progress" aria-hidden="true"></div>
+      </div>
+      <noscript>
+        <style>#journey-canvas, .journey-progress { display: none; } .journey-stage { height: auto; overflow: visible; } .journey-intro { position: static; padding: var(--pad); padding-bottom: 0; } .stop-panel { position: static; opacity: 1; visibility: visible; transform: none; filter: none; pointer-events: auto; }</style>
+        <div class="journey-noscript">
+          <figure><img src="assets/frames/desktop/f_0010.webp" alt="Lack-Nahaufnahme des Sportwagens" loading="lazy"><figcaption>Lackpolitur &amp; Keramik<p>Mehrstufige Politur, danach Keramikversiegelung — bis zu 7 Jahre Schutz.</p></figcaption></figure>
+          <figure><img src="assets/frames/desktop/f_0066.webp" alt="Cockpit und Armaturen" loading="lazy"><figcaption>Innenraum-Aufbereitung<p>Tiefenreinigung von Armaturen, Himmel und jeder Ritze im Cockpit.</p></figcaption></figure>
+          <figure><img src="assets/frames/desktop/f_0087.webp" alt="Fussraum und Teppich" loading="lazy"><figcaption>Deep Clean<p>Extraktionsreinigung bis in die Faser, Geruchsneutralisierung inklusive.</p></figcaption></figure>
+          <figure><img src="assets/frames/desktop/f_0108.webp" alt="Ledersitze" loading="lazy"><figcaption>Leder &amp; Polster<p>Lederreinigung, Pflege und Imprägnierung. Sitze wie am ersten Tag.</p></figcaption></figure>
+          <figure><img src="assets/frames/desktop/f_0142.webp" alt="Felge in Nahaufnahme" loading="lazy"><figcaption>Felgen &amp; Reifen<p>Tiefenreinigung, Versiegelung, Reifenpflege für jede Felgenart.</p></figcaption></figure>
+        </div>
+      </noscript>
+    </section>
+
+    <!-- ============ DER UNTERSCHIED ============ -->
+    <section class="section" id="unterschied">
+      <div class="section-head">
+        <p class="kicker reveal">Der Unterschied</p>
+        <h2 class="display h-lg reveal">Fahr über<br>die Haube.</h2>
+        <p class="lead reveal">Links der Lack, wie er zu mir kommt. Rechts, wie er zurückgeht. Beweg die Maus oder den Finger über das Bild.</p>
+      </div>
+      <div class="compare reveal" id="compare" role="slider" tabindex="0" aria-label="Vorher-Nachher-Vergleich der Lackaufbereitung" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+        <img class="compare-after" src="assets/img/hood-after.webp" alt="Motorhaube nach der Politur mit spiegelglattem Lack">
+        <div class="compare-before-wrap">
+          <img class="compare-before" src="assets/img/hood-before.webp" alt="Motorhaube vor der Politur mit stumpfem, zerkratztem Lack">
+        </div>
+        <div class="compare-handle" aria-hidden="true"><span></span></div>
+        <span class="compare-label label-before" aria-hidden="true">Vorher</span>
+        <span class="compare-label label-after" aria-hidden="true">Nachher</span>
+      </div>
+    </section>
+
+    <!-- ============ PAKETE ============ -->
+    <section class="section" id="pakete">
+      <div class="section-head">
+        <p class="kicker reveal">Pakete</p>
+        <h2 class="display h-lg reveal">Drei Stufen.<br>Ein Anspruch.</h2>
+        <p class="lead reveal">Von der regelmässigen Pflege bis zum kompletten Concours-Programm. Wähl, was zu dir passt.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card panel reveal">
+          <h3 class="display h-md">Wash &amp; Care</h3>
+          <p class="price-note">Saubere Basis-Pflege für regelmässige Auffrischung. Ideal alle 4–6 Wochen.</p>
+          <p class="price"><span>ab</span> 250 <span>CHF</span></p>
+          <ul>
+            <li>Schonende Handwäsche</li>
+            <li>Lackdekontamination</li>
+            <li>Felgenreinigung</li>
+            <li>Innenraum Basic-Reinigung</li>
+            <li>Reifenpflege</li>
+          </ul>
+          <a class="btn-ghost" href="#kontakt">Anfragen</a>
+        </article>
+        <article class="price-card panel featured reveal">
+          <span class="badge">Beliebteste Wahl</span>
+          <h3 class="display h-md">Full Detail</h3>
+          <p class="price-note">Komplette Aufbereitung aussen &amp; innen. Für den richtigen «Wow»-Moment.</p>
+          <p class="price"><span>ab</span> 620 <span>CHF</span></p>
+          <ul>
+            <li>Alles aus Wash &amp; Care</li>
+            <li>Lackpolitur (1-stufig)</li>
+            <li>Innenraum Deep Clean</li>
+            <li>Leder-Pflege &amp; Imprägnierung</li>
+            <li>Glas-Versiegelung</li>
+            <li>Geruchsneutralisierung</li>
+          </ul>
+          <a class="btn" href="#kontakt">Full Detail sichern</a>
+        </article>
+        <article class="price-card panel reveal">
+          <h3 class="display h-md">Concours Level</h3>
+          <p class="price-note">Kompromisslose Aufbereitung mit Langzeit-Schutz. Für Liebhaber-Fahrzeuge.</p>
+          <p class="price"><span>ab</span> 1050 <span>CHF</span></p>
+          <ul>
+            <li>Alles aus Full Detail</li>
+            <li>Lackpolitur (3-stufig)</li>
+            <li>Keramikversiegelung (bis 7 Jahre)</li>
+            <li>Felgenversiegelung</li>
+            <li>Innenraum Premium-Schutz</li>
+            <li>6 Monate Pflege-Support inklusive</li>
+          </ul>
+          <a class="btn-ghost" href="#kontakt">Anfragen</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ ABLAUF ============ -->
+    <section class="section" id="ablauf">
+      <div class="section-head">
+        <p class="kicker reveal">Ablauf</p>
+        <h2 class="display h-lg reveal">Wie wir<br>arbeiten.</h2>
+        <p class="lead reveal">Vier Schritte. Volle Transparenz. Keine Überraschungen.</p>
+      </div>
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step-num display">01</span>
+          <h3>Anfrage</h3>
+          <p>Per WhatsApp, Telefon oder E-Mail. Rückmeldung innert 24 Stunden.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-num display">02</span>
+          <h3>Analyse</h3>
+          <p>Wir checken dein Fahrzeug vor Ort, besprechen Erwartungen und legen den Umfang fest.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-num display">03</span>
+          <h3>Aufbereitung</h3>
+          <p>Profi-Equipment, Premium-Produkte. Schritt für Schritt zum perfekten Ergebnis.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-num display">04</span>
+          <h3>Übergabe</h3>
+          <p>Endkontrolle gemeinsam mit dir. Wenn du nicht 100 % happy bist, sind wir's auch nicht.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ ARBEITEN ============ -->
+    <section class="section" id="arbeiten">
+      <div class="section-head">
+        <p class="kicker reveal">Arbeiten</p>
+        <h2 class="display h-lg reveal">Ergebnisse,<br>die sprechen.</h2>
+        <p class="lead reveal">Auszug aus unseren letzten Projekten. Jedes Fahrzeug ist eine Geschichte für sich.</p>
+      </div>
+      <div class="work-grid">
+        <figure class="work-card featured reveal">
+          <img src="assets/img/work-1.webp" alt="Porsche 911 nach Full Detail und Keramikversiegelung" loading="lazy">
+          <figcaption><span>Featured</span>Porsche 911 — Full Detail + Keramik</figcaption>
+        </figure>
+        <figure class="work-card reveal">
+          <img src="assets/img/work-2.webp" alt="BMW Innenraum nach Leder-Pflege" loading="lazy">
+          <figcaption><span>Innenraum</span>BMW — Leder &amp; Innenraum-Pflege</figcaption>
+        </figure>
+        <figure class="work-card reveal">
+          <img src="assets/img/work-3.webp" alt="Audi RS6 nach dreistufiger Politur" loading="lazy">
+          <figcaption><span>Aussen</span>Audi RS6 — Politur 3-stufig</figcaption>
+        </figure>
+        <figure class="work-card reveal">
+          <img src="assets/img/work-4.webp" alt="Wasserperlen auf keramikversiegeltem Silberlack" loading="lazy">
+          <figcaption><span>Keramik</span>Keramikversiegelung — Silber-Metallic</figcaption>
+        </figure>
+        <figure class="work-card reveal">
+          <img src="assets/img/work-5.webp" alt="Audi e-tron GT nach Aufbereitung" loading="lazy">
+          <figcaption><span>Felgen</span>Audi e-tron GT — Aufbereitung</figcaption>
+        </figure>
+        <figure class="work-card reveal">
+          <img src="assets/img/work-6.webp" alt="Porsche 964 nach Concours Detail" loading="lazy">
+          <figcaption><span>Klassik</span>Porsche 964 — Concours Detail</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ KUNDENSTIMMEN ============ -->
+    <section class="section" id="stimmen">
+      <div class="section-head">
+        <p class="kicker reveal">Kundenstimmen</p>
+        <h2 class="display h-lg reveal">Das sagen<br>die Besitzer.</h2>
+      </div>
+      <div class="quotes-grid">
+        <figure class="quote-card panel reveal">
+          <div class="stars" aria-label="5 von 5 Sternen">★★★★★</div>
+          <blockquote>Der Wagen sah besser aus als bei der Abholung ab Werk. Ich habe den Lack im Sonnenlicht abgesucht und keinen einzigen Kratzer mehr gefunden.</blockquote>
+          <figcaption>Marco B. <span>Porsche 911</span></figcaption>
+        </figure>
+        <figure class="quote-card panel reveal">
+          <div class="stars" aria-label="5 von 5 Sternen">★★★★★</div>
+          <blockquote>Termin gehalten, Preis wie besprochen, Ergebnis überragend. So stellt man sich ehrliches Handwerk vor.</blockquote>
+          <figcaption>Sandra K. <span>Audi RS6</span></figcaption>
+        </figure>
+        <figure class="quote-card panel reveal">
+          <div class="stars" aria-label="5 von 5 Sternen">★★★★★</div>
+          <blockquote>Nach acht Jahren mit Kindersitzen dachte ich, der Innenraum sei verloren. Er sieht aus wie neu.</blockquote>
+          <figcaption>Daniel M. <span>BMW 530d</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ ÜBER MICH ============ -->
+    <section class="section" id="ueber">
+      <div class="about-grid">
+        <div>
+          <p class="kicker reveal">Über mich</p>
+          <h2 class="display h-lg reveal">Hinter<br>der Marke.</h2>
+          <p class="about-text reveal">Beste Qualität, Präzision und Leidenschaft, diese Merkmale zeichnen mich aus. Mein Name ist Illy und die Passion Autoaufbereitung begleitet mich schon seit vielen Jahren und lässt mich nicht mehr los. Die Liebe zum Detail ist beim Detailing das, was am Ende den Unterschied macht. Denn nur so hole ich das Maximum aus jedem Lack und jedem Innenraum heraus.</p>
+          <p class="about-text reveal">Um jedem Kundenwunsch gerecht zu werden, arbeite ich ausschliesslich mit hochwertigen Produkten und nehme mir für jedes Fahrzeug die Zeit, die es wirklich braucht. Abfertigung gibt es bei mir nicht. Ich behandle jedes Auto so, als wäre es mein eigenes.</p>
+          <p class="about-text reveal">Am Schluss schauen wir das Ergebnis gemeinsam an. Wenn du zufrieden bist, bin ich es auch.</p>
+          <ul class="timeline">
+            <li class="reveal"><span class="year display">2019</span> Erste Politur am eigenen Auto. Sucht gepackt.</li>
+            <li class="reveal"><span class="year display">2021</span> Schulung &amp; Profi-Equipment. Vom Hobby zum Handwerk.</li>
+            <li class="reveal"><span class="year display">2023</span> Erste zahlende Kunden. Mund-zu-Mund bringt mehr als jede Werbung.</li>
+            <li class="reveal"><span class="year display">2025</span> Eigenes Setup. Premium-Tools. Shark Surface ist offiziell.</li>
+          </ul>
+        </div>
+        <figure class="founder reveal">
+          <img src="assets/img/founder.webp" alt="Der Gründer von Shark Surface in der Werkstatt" loading="lazy">
+          <figcaption>Illy<br><span>Founder · Detailer</span></figcaption>
+        </figure>
+      </div>
+      <blockquote class="about-quote reveal">
+        <p>«Details sind keine Nebensache.<br>Sie sind das Ergebnis.»</p>
+      </blockquote>
+    </section>
+
+    <!-- ============ KONTAKT ============ -->
+    <section class="section contact" id="kontakt">
+      <div class="section-head">
+        <p class="kicker reveal">Kontakt</p>
+        <h2 class="display h-lg reveal">Bereit für<br><span style="color:var(--accent)">mehr Glanz?</span></h2>
+        <p class="lead reveal">Schreib uns kurz, was du brauchst. Rückmeldung innert 24 Stunden mit persönlichem Angebot.</p>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-card panel reveal" href="https://wa.me/41795371526" target="_blank" rel="noopener">
+          <span class="contact-label">WhatsApp</span>
+          <span class="contact-value">Direkt schreiben</span>
+        </a>
+        <a class="contact-card panel reveal" href="tel:+41795371526">
+          <span class="contact-label">Telefon</span>
+          <span class="contact-value">+41 79 537 15 26</span>
+        </a>
+        <a class="contact-card panel reveal" href="mailto:info@sharksurface.ch">
+          <span class="contact-label">E-Mail</span>
+          <span class="contact-value">info@sharksurface.ch</span>
+        </a>
+      </div>
+      <p class="contact-location reveal">Egnacherstrasse 60, 9320 Frasnacht — Termine nach Vereinbarung.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="nav-logo">
+      <img class="footer-logo-img" src="assets/img/logo.webp" alt="Shark Surface — Car Detailing" loading="lazy">
+    </span>
+    <span>© 2026 Shark Surface. Alle Rechte vorbehalten.</span>
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="agb.html">AGB</a>
+    </div>
+  </footer>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="js/sequence.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/journey.js"></script>
+  <script src="js/compare.js"></script>
+</body>
+</html>

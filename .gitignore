@@ -1,0 +1,5 @@
+# Website-Assets gehören zum Projekt (globales *.webp/*.png-Ignore aufheben)
+!site/assets/**/*.webp
+
+# Interne Planung bleibt lokal
+docs/
