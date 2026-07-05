@@ -633,3 +633,25 @@ html.reduced .journey-intro { position: static; padding: var(--pad); padding-bot
 .legal h2 { font-size: 1.1rem; margin: 2em 0 0.6em; }
 .legal p { color: var(--muted); margin-bottom: 1em; }
 .legal .back { color: var(--accent); display: inline-block; margin-bottom: 3em; }
+
+/* ---------- Service-Unterseiten ---------- */
+.svc-hero { padding: clamp(140px, 20vh, 210px) var(--pad) 0; max-width: 1000px; }
+.svc-hero .lead { max-width: 720px; margin-top: 1em; }
+.svc { max-width: 820px; }
+.svc p { color: var(--muted); margin-bottom: 1.2em; }
+.svc h2 { font-family: var(--font-display); font-size: clamp(1.2rem, 2.4vw, 1.7rem); line-height: 1.15; margin: 2.4em 0 0.8em; }
+.svc ul.checks { margin: 0 0 1.4em; }
+.svc ul.checks li { padding-left: 1.7em; position: relative; margin-bottom: 0.55em; color: var(--muted); }
+.svc ul.checks li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+.svc .price-hint { border-left: 3px solid var(--accent); background: var(--accent-soft); padding: 14px 18px; border-radius: 0 12px 12px 0; color: var(--text); margin: 1.6em 0; }
+.faq details { border-bottom: 1px solid var(--line); padding: 1.1em 0; }
+.faq details:first-of-type { border-top: 1px solid var(--line); }
+.faq summary { cursor: pointer; font-weight: 600; color: var(--text); list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--accent); flex-shrink: 0; }
+.faq details[open] summary::after { content: "–"; }
+.faq details p { color: var(--muted); margin: 0.8em 0 0; }
+.svc-cta { margin-top: 3em; display: flex; gap: 16px; flex-wrap: wrap; }
+.svc-links { margin-top: 2.4em; padding-top: 1.6em; border-top: 1px solid var(--line); }
+.svc-links a { color: var(--accent); }
+.svc-links li { margin-bottom: 0.4em; }
