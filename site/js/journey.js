@@ -5,7 +5,7 @@
    aussen 0–0.12 · Tür/Einstieg 0.13–0.36 · Cockpit 0.38–0.50 ·
    Fussraum 0.53–0.62 · Sitze 0.65–0.79 · Felge 0.85–0.98 */
 const STOPS = [
-  { id: 'lack',    from: 0.00, to: 0.12, num: '01', title: 'Lackpolitur & Keramik',  text: 'Mehrstufige Politur entfernt Swirls, Hologramme und Kratzer. Danach: Keramikversiegelung — wasserabweisend, UV-stabil, bis zu 7 Jahre Schutz.', pos: 'left'  },
+  { id: 'lack',    from: 0.00, to: 0.12, num: '01', title: 'Lackpolitur & Keramik',  text: 'Mehrstufige Politur entfernt Swirls, Hologramme und Kratzer. Danach: Keramikversiegelung — wasserabweisend, UV-stabil, 3–5 Jahre Schutz.', pos: 'left'  },
   /* 0.13–0.36: Tür öffnet, Einstieg — bewusst kein Panel */
   { id: 'cockpit', from: 0.38, to: 0.50, num: '02', title: 'Innenraum-Aufbereitung', text: 'Tiefenreinigung von Armaturen, Himmel und jeder Ritze im Cockpit. Sauber ist erst der Anfang.', pos: 'right' },
   { id: 'teppich', from: 0.53, to: 0.62, num: '03', title: 'Deep Clean',             text: 'Fussraum und Teppiche: Extraktionsreinigung bis in die Faser, Geruchsneutralisierung inklusive.', pos: 'left'  },
