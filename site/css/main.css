@@ -670,3 +670,14 @@ html.reduced .journey-intro { position: static; padding: var(--pad); padding-bot
 .svc-hero-content .back { color: var(--accent); display: inline-block; margin-bottom: 1.8em; font-weight: 600; }
 .svc-hero-content .back:hover { text-decoration: underline; }
 @media (max-width: 640px) { .svc-hero-visual { min-height: 62vh; } }
+
+/* ---------- Leistungs-Kacheln (Startseite) ---------- */
+.svc-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+.svc-tile { position: relative; display: block; border-radius: 20px; overflow: hidden; border: 1px solid var(--line); aspect-ratio: 3 / 4; background: var(--bg-2); }
+.svc-tile img { width: 100%; height: 100%; object-fit: cover; filter: brightness(.62) saturate(.95); transition: transform .6s ease, filter .6s ease; }
+.svc-tile:hover img, .svc-tile:focus-visible img { transform: scale(1.05); filter: brightness(.8); }
+.svc-tile::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 45%, rgba(7,9,11,.88) 100%); pointer-events: none; }
+.svc-tile-label { position: absolute; left: 18px; right: 18px; bottom: 16px; z-index: 1; font-weight: 700; font-size: 1.05rem; display: flex; flex-direction: column; gap: 4px; }
+.svc-tile-label small { color: var(--accent); font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.svc-tile-label em { font-style: normal; color: var(--accent); }
+@media (max-width: 640px) { .svc-tile { aspect-ratio: 16 / 10; } }
