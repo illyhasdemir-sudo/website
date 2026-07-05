@@ -658,3 +658,15 @@ html.reduced .journey-intro { position: static; padding: var(--pad); padding-bot
 
 .svc-hero .back { color: var(--accent); display: inline-block; margin-bottom: 2.2em; font-weight: 600; }
 .svc-hero .back:hover { text-decoration: underline; }
+
+/* ---------- Visueller Hero für Service-Unterseiten ---------- */
+.svc-hero-visual { position: relative; min-height: 72vh; display: flex; align-items: flex-end; padding: calc(90px + 4vh) var(--pad) clamp(48px, 8vh, 90px); overflow: hidden; }
+.svc-hero-bg { position: absolute; inset: 0; z-index: 0; }
+.svc-hero-bg img { width: 100%; height: 100%; object-fit: cover; filter: brightness(.5) saturate(.9); }
+.svc-hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,9,11,.65) 0%, rgba(7,9,11,.15) 45%, var(--bg) 100%); }
+.svc-hero-content { position: relative; z-index: 1; max-width: 1000px; }
+.svc-hero-content .lead { max-width: 700px; margin-top: 1em; }
+.svc-hero-content .hero-ctas { margin-top: 1.8em; }
+.svc-hero-content .back { color: var(--accent); display: inline-block; margin-bottom: 1.8em; font-weight: 600; }
+.svc-hero-content .back:hover { text-decoration: underline; }
+@media (max-width: 640px) { .svc-hero-visual { min-height: 62vh; } }

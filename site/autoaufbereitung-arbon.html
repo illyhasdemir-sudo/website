@@ -105,6 +105,7 @@
   </script>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="preload" as="image" href="assets/img/hero.webp">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -123,14 +124,21 @@
   </nav>
 
   <main>
-    <header class="svc-hero">
-      <a class="back" href="index.html">← Zurück zur Startseite</a>
-      <p class="kicker">Autoaufbereitung · Arbon &amp; Umgebung</p>
-      <h1 class="display h-lg">Detailing.<br><span style="color:var(--accent)">Direkt in Arbon.</span></h1>
-      <p class="lead">Shark Surface sitzt in Frasnacht — einem Ortsteil von Arbon, direkt am Bodensee. Kein Versand, kein Anfahrtsstress: Premium-Aufbereitung vor der Haustür, Termine nach Vereinbarung.</p>
+    <header class="svc-hero-visual">
+      <div class="svc-hero-bg"><img src="assets/img/hero.webp" alt="Frisch aufbereiteter Sportwagen im dunklen Studio" fetchpriority="high"></div>
+      <div class="svc-hero-content">
+        <a class="back" href="index.html">← Zurück zur Startseite</a>
+        <p class="kicker">Autoaufbereitung · Arbon &amp; Umgebung</p>
+        <h1 class="display h-xl">Detailing.<br><span style="color:var(--accent)">Direkt in Arbon.</span></h1>
+        <p class="lead">Shark Surface sitzt in Frasnacht — einem Ortsteil von Arbon, direkt am Bodensee. Kein Versand, kein Anfahrtsstress: Premium-Aufbereitung vor der Haustür, Termine nach Vereinbarung.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="https://wa.me/41795371526" target="_blank" rel="noopener">Per WhatsApp anfragen</a>
+          <a class="btn-ghost" href="#details">Mehr erfahren</a>
+        </div>
+      </div>
     </header>
 
-    <section class="section" style="padding-top:clamp(40px,6vh,72px)">
+    <section class="section" id="details" style="padding-top:clamp(40px,6vh,72px)">
       <div class="svc">
         <h2>Alle Leistungen an einem Ort</h2>
         <ul class="checks">
